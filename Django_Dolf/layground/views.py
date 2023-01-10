@@ -8,7 +8,13 @@ from django.http import HttpResponse
 # This is what I did in this
 
 def say_hello(request):
-    return HttpResponse("Hello world From Dolf...")
+    
+    num = ['Fadhel', 'Mohammed', 'Ali']
+   
+    
+    
+    return render(request, 'hello.html', {'name': num})
+
 
 
 
