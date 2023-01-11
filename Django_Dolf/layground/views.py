@@ -8,13 +8,12 @@ from django.http import HttpResponse
 # This is what I did in this
 
 def say_hello(request):
+    # we can add dic in this open
+    return render(request, 'hello.html',{'name':['1','Hello','2']})
     
-    num = ['Fadhel', 'Mohammed', 'Ali']
-   
     
-    
-    return render(request, 'hello.html', {'name': num})
 
 
-
-
+# This is the scound page 
+def my_hi(request):
+    return render(request,'about.html')
